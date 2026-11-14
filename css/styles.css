@@ -1,0 +1,47 @@
+.column{
+    width: 45%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+body {
+    font-size: 18pt;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    flex:0;
+    text-align: center;
+    background: rgba(116, 249, 104, 0.65);
+    border-radius: 3rem;
+    margin: 0;
+    padding: 1.5rem;
+    font-size: 4rem;
+}
+
+#signupForm{
+    flex:1;
+    padding: 2rem;
+    background: rgba(209, 171, 203, 0.65);
+    border-radius: 3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background: rgba(150, 150, 150, 0.65);
+    border-radius: 3rem;
+    font-size: 1rem;
+}
+
+.submitBtn{
+    font-size: 2rem;
+    display: block;
+    margin: 1rem auto;
+    border: none;
+    border-radius: 20px;
+    width: 10rem;
+    height: 4rem;
+}

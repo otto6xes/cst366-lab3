@@ -1,0 +1,69 @@
+Guided Lab: Sign Up Page with Web APIs
+Checkpoint Responses
+
+Downloaded: 11/14/2026, 5:55:16 AM
+
+Lesson 1: Create the HTML form
+Started: 11/13/2026, 9:03:45 AM
+Completed: 11/14/2026, 5:03:39 AM
+Time spent: 1199 minute(s), 55 second(s)
+
+Question:
+Why are we using <select> for the state and county elements instead of radio buttons?
+
+Student response:
+there would be too many options being shown all at once causing screen clutter making it harder to navigate the site
+
+----------------------------------------
+
+Lesson 2: Use the ZIP code API
+Started: 11/13/2026, 9:14:23 AM
+Completed: 11/14/2026, 5:06:27 AM
+Time spent: 1192 minute(s), 3 second(s)
+
+Question:
+Why is the change event a better choice than click for the ZIP code textbox? Hint: Try both and observe when the event triggers.
+
+Student response:
+since we want to update information on the form in real time as the user is inputting information, it makes more sense to use change to do this while click will update the page before they have put in a zip code
+
+----------------------------------------
+
+Lesson 3: Populate the state menu
+Started: 11/14/2026, 5:05:36 AM
+Completed: 11/14/2026, 5:13:04 AM
+Time spent: 7 minute(s), 27 second(s)
+
+Question:
+Why are we using this line of code? option.value = item.usps;
+
+Student response:
+this is storing the value for each option as the 2-letter abbreviation of the state instead of using the full name, which for states that use 2 words could cause issues
+
+----------------------------------------
+
+Lesson 4: Check username availability
+Started: 11/14/2026, 5:13:04 AM
+Completed: 11/14/2026, 5:18:37 AM
+Time spent: 5 minute(s), 33 second(s)
+
+Question:
+The API returns an object with an available property. Why does the condition below work? if (data.available)
+
+Student response:
+the vlaue stored by data.available is a boolean
+
+----------------------------------------
+
+Lesson 5: Validate username
+Started: 11/14/2026, 5:18:37 AM
+Completed: 11/14/2026, 5:52:59 AM
+Time spent: 34 minute(s), 23 second(s)
+
+Question:
+Why do we need to use await when calling checkUsername() inside validateForm()? let usernameAvailable = await checkUsername();
+
+Student response:
+since checkUsername() uses fetch() we have to wait till the fetch request is resolved in order to continue
+
+----------------------------------------
